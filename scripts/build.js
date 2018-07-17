@@ -33,8 +33,8 @@ const pkgDir = require('pkg-dir');
       ku,
       ten,
       codePoint: codePointList.length >= 2 ? codePointList : codePointList.shift() || undefined,
-      fullwidth: fullwidth ? parseInt(fullwidth.slice(2), 16) : undefined,
-      windows: windows ? parseInt(windows.slice(2), 16) : undefined,
+      fullwidth: fullwidth ? parseInt(fullwidth.match(/U\+([a-f0-9]+)/i)[1], 16) : undefined,
+      windows: windows ? parseInt(windows.match(/U\+([a-f0-9]+)/i)[1], 16) : undefined,
       level: level + 1 || undefined,
     };
   });
