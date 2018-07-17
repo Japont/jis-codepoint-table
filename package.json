@@ -3,7 +3,7 @@
   "license": "CC0-1.0",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "repository": "git@github.com:Japont/jis-codepoint-table.git",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "files": [
     "index.d.ts"
